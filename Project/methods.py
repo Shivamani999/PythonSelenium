@@ -11,3 +11,4 @@ print(ele.is_displayed())
 print(ele.is_enabled())
 ele.screenshot("ele.png")
 #ele.text
+

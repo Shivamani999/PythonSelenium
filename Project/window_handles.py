@@ -15,7 +15,10 @@ open_tab = driver.find_element(By.ID,"opentab")
 open_tab.click()
 
 windows = driver.window_handles
-for window in windows:
-    driver.switch_to.window(window)
-    if(driver.current_url.__contains__("qaclickacademy")):
-        print(driver.title)
+# for window in windows:
+#     driver.switch_to.window(window)
+#     if(driver.current_url.__contains__("qaclickacademy")):
+#         print(driver.title)
+print(driver.current_url)
+driver.switch_to.window(windows[1])
+print(driver.current_url)
